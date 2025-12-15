@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7dfec;
+    color: #333;
+  }
+  
+  .header {
+    background-color: #062c52 ;
+    color: rgb(255, 255, 255);
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 0px 0px 30px 30px  ;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+   
+    
+border: none;  
+}
+.header a {
+    color: #ffde59;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .header a:hover {
+    color: #72040ab6; 
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .filters input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .car-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .price {
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1e90ff;
+  }
+  
+  button {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #dbafc5;
+  }
+  
+  footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .car-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+
+  .car-details.active{
+    display: block;
+    }
+
+  .details-btn {
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    color: #1e90ff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+
+  }
+  
+  .details-btn:hover {
+    background-color: #1e90ff;
+    color: white;
+  }
+
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .form-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .form-buttons button[type="submit"] {
+    background-color: #1e90ff;
+    color: white;
+  }
+  
+  .form-buttons button[type="button"] {
+    background-color: #ccc;
+  }
+  
